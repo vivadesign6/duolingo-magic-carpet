@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Customize Your Magic Carpet | Duolingo Interactive Experience</title>
+    <meta name="description" content="Create your own personalized magic carpet and watch it transform as you learn with Duolingo. Customize patterns, colors, and see how your learning style shapes your unique journey.">
+    <meta name="keywords" content="duolingo magic carpet, customize language learning, interactive learning experience, personalized language journey">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://magiccarpetjourney.duolingo.com/experience">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzU4Q0MwMiIgcng9IjEwMCIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjIwMCIgcj0iMTAwIiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjAwIiByPSI2MCIgZmlsbD0iIzMzMyIvPjxjaXJjbGUgY3g9IjI4MCIgY3k9IjE4MCIgcj0iMjAiIGZpbGw9IiNmZmYiLz48ZWxsaXBzZSBjeD0iMjU2IiBjeT0iMzIwIiByeD0iMTYwIiByeT0iMTIwIiBmaWxsPSIjNThDQzAyIi8+PGVsbGlwc2UgY3g9IjI1NiIgY3k9IjMwMCIgcng9IjYwIiByeT0iNDAiIGZpbGw9IiNGRkM2NUEiLz48cGF0aCBkPSJNMjU2LDI2MCBMMjI1LDMwMCBMMjg3LDMwMCBaIiBmaWxsPSIjRTM5ODJCIi8+PC9zdmc+">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carpet-experience.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-navigation">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <!-- SVG logo created inline for demonstration -->
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40">
+                                <g fill="#58CC02">
+                                    <path d="M30,20 A10,10 0 1,1 10,20 A10,10 0 1,1 30,20 Z"/>
+                                    <ellipse cx="20" cy="30" rx="15" ry="10"/>
+                                </g>
+                                <g fill="white">
+                                    <circle cx="20" cy="17" r="5"/>
+                                </g>
+                                <g fill="#333">
+                                    <circle cx="20" cy="17" r="2.5"/>
+                                </g>
+                                <g fill="#FFC65A">
+                                    <ellipse cx="20" cy="25" rx="6" ry="4"/>
+                                </g>
+                                <g fill="#333">
+                                    <path d="M42,15 H46 Q48,15 49,16 Q50,17 50,19 Q50,21 49,22 Q48,23 46,23 H44 V28 H42 V15 Z M46,21 Q47,21 47.5,20.5 Q48,20 48,19 Q48,18 47.5,17.5 Q47,17 46,17 H44 V21 H46 Z"/>
+                                    <path d="M53,15 H61 V17 H55 V20 H60 V22 H55 V26 H61 V28 H53 V15 Z"/>
+                                    <path d="M67,15 H71 Q73,15 74,16 Q75,17 75,19 Q75,21 74,22 Q73,23 71,23 H69 V28 H67 V15 Z M71,21 Q72,21 72.5,20.5 Q73,20 73,19 Q73,18 72.5,17.5 Q72,17 71,17 H69 V21 H71 Z"/>
+                                    <path d="M78,15 H80 V26 H86 V28 H78 V15 Z"/>
+                                    <path d="M89,15 H97 V17 H91 V20 H96 V22 H91 V26 H97 V28 H89 V15 Z"/>
+                                    <path d="M103,15 H105 L110,28 H108 L107,25 H101 L100,28 H98 L103,15 Z M106,23 L104,18 L102,23 H106 Z"/>
+                                    <path d="M115,15 H117 V22 Q117,23.5 117.5,24.25 Q118,25 119,25 Q120,25 120.5,24.25 Q121,23.5 121,22 V15 H123 V22 Q123,24.5 121.75,26.25 Q120.5,28 119,28 Q117.5,28 116.25,26.25 Q115,24.5 115,22 V15 Z"/>
+                                    <path d="M128,15 H130 V28 H128 V15 Z"/>
+                                    <path d="M138,15 H140 V28 H138 L133,19 V28 H131 V15 H133 L138,24 V15 Z"/>
+                                    <path d="M147,17 H143 V15 H153 V17 H149 V28 H147 V17 Z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <ul id="main-menu" class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="experience.html" class="nav-link active">Magic Carpet Experience</a></li>
+                        <li class="nav-item"><a href="parents.html" class="nav-link">For Parents</a></li>
+                        <li class="nav-item"><a href="summer.html" class="nav-link">Summer Learning</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta"><a href="trial.html" class="button primary-cta">Start Free Trial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="experience-hero">
+            <div class="container">
+                <h1 class="page-title">Customize Your Magic Carpet</h1>
+                <p class="page-subtitle">Personalize your language learning journey and watch your carpet transform as you learn</p>
+            </div>
+        </section>
+
+        <section class="carpet-customizer-section">
+            <div class="container">
+                <div class="carpet-customizer">
+                    <div class="customizer-left">
+                        <div class="carpet-preview">
+                            <div class="carpet-container">
+                                <div id="carpet-visual" class="carpet-visual">
+                                    <!-- Carpet will be rendered here by JS -->
+                                    <div class="carpet-base"></div>
+                                    <div class="carpet-pattern"></div>
+                                    <div class="carpet-overlay"></div>
+                                    <div class="carpet-threads"></div>
+                                    <div class="carpet-gems"></div>
+                                    <div class="carpet-league-effects"></div>
+                                    <div class="duo-character">
+                                        <img src="images/duo-flying.svg" alt="Duo the owl" class="duo-image">
+                                    </div>
+                                </div>
+                                <div class="carpet-shadow"></div>
+                                <div class="flight-height-indicator">
+                                    <div class="height-marker bronze">Bronze</div>
+                                    <div class="height-marker silver">Silver</div>
+                                    <div class="height-marker gold">Gold</div>
+                                    <div class="height-marker sapphire">Sapphire</div>
+                                    <div class="height-marker ruby">Ruby</div>
+                                    <div class="height-marker diamond">Diamond</div>
+                                </div>
+                            </div>
+                            
+                            <div class="journey-visualization">
+                                <div class="journey-path">
+                                    <div class="journey-node completed" data-node="1">
+                                        <div class="node-icon">1</div>
+                                        <div class="node-label">First Words</div>
+                                    </div>
+                                    <div class="journey-node active" data-node="2">
+                                        <div class="node-icon">2</div>
+                                        <div class="node-label">Basic Phrases</div>
+                                    </div>
+                                    <div class="journey-node locked" data-node="3">
+                                        <div class="node-icon">3</div>
+                                        <div class="node-label">Conversation</div>
+                                    </div>
+                                    <div class="journey-node locked premium" data-node="4">
+                                        <div class="node-icon">4</div>
+                                        <div class="node-label">Fluency</div>
+                                        <div class="premium-badge">Premium</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="customizer-right">
+                        <div class="customizer-tabs">
+                            <button class="tab-button active" data-tab="design">Carpet Design</button>
+                            <button class="tab-button" data-tab="learning">Learning Style</button>
+                            <button class="tab-button" data-tab="achievements">Achievements</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="design-tab">
+                            <h3>Select Pattern</h3>
+                            <div class="pattern-options">
+                                <button class="pattern-option" data-pattern="classic">
+                                    <img src="images/patterns/classic-thumb.svg" alt="Classic pattern" width="60" height="60">
+                                    <span class="pattern-name">Classic</span>
+                                </button>
+                                <button class="pattern-option active" data-pattern="geometric">
+                                    <img src="images/patterns/geometric-thumb.svg" alt="Geometric pattern" width="60" height="60">
+                                    <span class="pattern-name">Geometric</span>
+                                </button>
+                                <button class="pattern-option" data-pattern="floral">
+                                    <img src="images/patterns/floral-thumb.svg" alt="Floral pattern" width="60" height="60">
+                                    <span class="pattern-name">Floral</span>
+                                </button>
+                                <button class="pattern-option premium" data-pattern="arabesque">
+                                    <img src="images/patterns/arabesque-thumb.svg" alt="Arabesque pattern" width="60" height="60">
+                                    <span class="pattern-name">Arabesque</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="pattern-option premium" data-pattern="royal">
+                                    <img src="images/patterns/royal-thumb.svg" alt="Royal pattern" width="60" height="60">
+                                    <span class="pattern-name">Royal</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                            
+                            <h3>Select Color</h3>
+                            <div class="color-options">
+                                <button class="color-option" data-color="purple" style="background-color: #A560F8">
+                                    <span class="sr-only">Purple</span>
+                                </button>
+                                <button class="color-option active" data-color="blue" style="background-color: #1CB0F6">
+                                    <span class="sr-only">Blue</span>
+                                </button>
+                                <button class="color-option" data-color="green" style="background-color: #58CC02">
+                                    <span class="sr-only">Green</span>
+                                </button>
+                                <button class="color-option premium" data-color="gold" style="background-color: #FFD900">
+                                    <span class="sr-only">Gold</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="color-option premium" data-color="orange" style="background-color: #FF9600">
+                                    <span class="sr-only">Orange</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                            
+                            <h3>Thread Embellishments</h3>
+                            <div class="thread-options">
+                                <button class="thread-option active" data-thread="standard">
+                                    <div class="thread-preview standard"></div>
+                                    <span class="thread-name">Standard</span>
+                                </button>
+                                <button class="thread-option" data-thread="silver">
+                                    <div class="thread-preview silver"></div>
+                                    <span class="thread-name">Silver</span>
+                                </button>
+                                <button class="thread-option premium" data-thread="gold">
+                                    <div class="thread-preview gold"></div>
+                                    <span class="thread-name">Gold</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="thread-option premium" data-thread="magical">
+                                    <div class="thread-preview magical"></div>
+                                    <span class="thread-name">Magical</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="learning-tab">
+                            <h3>Learning Style</h3>
+                            <p class="tab-description">Your learning style influences how your Magic Carpet looks and behaves. Choose your preferred learning style to see how it transforms your carpet.</p>
+                            
+                            <div class="learning-style-options">
+                                <div class="learning-style-option active" data-style="visual">
+                                    <div class="style-icon">
+                                        <img src="images/icons/visual-learner.svg" alt="Visual learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Visual Learner</h4>
+                                        <p>Your carpet will develop vibrant, picture-based patterns that help you remember words and phrases through images.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option" data-style="auditory">
+                                    <div class="style-icon">
+                                        <img src="images/icons/auditory-learner.svg" alt="Auditory learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Auditory Learner</h4>
+                                        <p>Your carpet will develop musical motifs and sound-wave patterns that pulse when you practice pronunciation.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option" data-style="kinesthetic">
+                                    <div class="style-icon">
+                                        <img src="images/icons/kinesthetic-learner.svg" alt="Kinesthetic learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Kinesthetic Learner</h4>
+                                        <p>Your carpet will develop interactive elements that respond to movement, helping you learn through action.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option premium" data-style="personalized">
+                                    <div class="style-icon">
+                                        <img src="images/icons/personalized-learner.svg" alt="Personalized learning icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Adaptive Learning</h4>
+                                        <p>Premium feature: Your carpet automatically adapts to your unique learning style based on your interactions.</p>
+                                        <span class="premium-badge">PRO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="achievements-tab">
+                            <h3>Your Achievements</h3>
+                            <p class="tab-description">Watch how your achievements transform your Magic Carpet! Each milestone unlocks new magical elements.</p>
+                            
+                            <div class="streak-counter">
+                                <div class="streak-label">Your Streak</div>
+                                <div class="streak-value" id="streak-counter">7</div>
+                                <div class="streak-description">Day streak adds golden threads</div>
+                            </div>
+                            
+                            <div class="gem-counter">
+                                <div class="gem-label">Your Gems</div>
+                                <div class="gem-value" id="gem-counter">145</div>
+                                <div class="gem-description">Gems add sparkle effects</div>
+                            </div>
+                            
+                            <div class="league-selector">
+                                <h4>Current League</h4>
+                                <p class="league-description">Your league determines how high your carpet can fly!</p>
+                                <div class="league-options">
+                                    <button class="league-option active" data-league="bronze">
+                                        <div class="league-icon bronze"></div>
+                                        <span class="league-name">Bronze</span>
+                                    </button>
+                                    <button class="league-option" data-league="silver">
+                                        <div class="league-icon silver"></div>
+                                        <span class="league-name">Silver</span>
+                                    </button>
+                                    <button class="league-option" data-league="gold">
+                                        <div class="league-icon gold"></div>
+                                        <span class="league-name">Gold</span>
+                                    </button>
+                                    <button class="league-option premium" data-league="diamond">
+                                        <div class="league-icon diamond"></div>
+                                        <span class="league-name">Diamond</span>
+                                        <span class="premium-badge">PRO</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="premium-upgrade">
+                            <div class="premium-features">
+                                <h3>Premium Features Unlock:</h3>
+                                <ul class="premium-features-list">
+                                    <li>Exclusive premium patterns & colors</li>
+                                    <li>Magical golden thread embellishments</li>
+                                    <li>Adaptive learning style personalization</li>
+                                    <li>Diamond League heights & destinations</li>
+                                    <li>Interactive gems & special effects</li>
+                                </ul>
+                            </div>
+                            <a href="trial.html" class="button primary-cta">Start 7-Day Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="premium-advantages">
+            <div class="container">
+                <h2 class="section-title">How Premium Powers Your Magic Carpet</h2>
+                
+                <div class="premium-comparison">
+                    <div class="comparison-column free">
+                        <h3>Free Experience</h3>
+                        <div class="comparison-image">
+                            <img src="images/carpet-free.svg" alt="Free Magic Carpet" class="responsive-image">
+                        </div>
+                        <ul class="feature-list">
+                            <li>Basic carpet patterns</li>
+                            <li>Limited color selection</li>
+                            <li>Standard threads</li>
+                            <li>Bronze League heights only</li>
+                            <li>Limited hearts interrupt journey</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-divider">
+                        <div class="vs-circle">VS</div>
+                    </div>
+                    
+                    <div class="comparison-column premium">
+                        <h3>Premium Experience</h3>
+                        <div class="comparison-image">
+                            <img src="images/carpet-premium.svg" alt="Premium Magic Carpet" class="responsive-image">
+                        </div>
+                        <ul class="feature-list">
+                            <li>Exclusive premium patterns</li>
+                            <li>Full color palette including gold</li>
+                            <li>Magical thread embellishments</li>
+                            <li>Diamond League heights & destinations</li>
+                            <li>Unlimited hearts for continuous flying</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="cta-container centered">
+                    <a href="trial.html" class="button primary-cta">Unlock Premium Magic</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="personalized-journey">
+            <div class="container">
+                <h2 class="section-title">No Two Journeys Are Alike</h2>
+                <p class="section-subtitle">Just as every child's learning journey is unique, so is their Magic Carpet</p>
+                
+                <div class="personalization-cards">
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <img src="images/persona-samuel.svg" alt="Visual learner persona" class="persona-avatar">
+                            <h3>Samuel (8)</h3>
+                            <div class="persona-tag">Visual Learner</div>
+                        </div>
+                        <div class="persona-carpet">
+                            <img src="images/carpet-visual-learner.svg" alt="Visual learner carpet" class="persona-carpet-image">
+                        </div>
+                        <div class="persona-description">
+                            <p>Samuel's carpet features vibrant imagery and picture-based patterns that reinforce vocabulary through visual connections.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <img src="images/persona-amelia.svg" alt="Auditory learner persona" class="persona-avatar">
+                            <h3>Amelia (7)</h3>
+                            <div class="persona-tag">Auditory Learner</div>
+                        </div>
+                        <div class="persona-carpet">
+                            <img src="images/carpet-auditory-learner.svg" alt="Auditory learner carpet" class="persona-carpet-image">
+                        </div>
+                        <div class="persona-description">
+                            <p>Amelia's carpet displays musical motifs and sound wave patterns that help her remember pronunciation and rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <img src="images/persona-daniel.svg" alt="Kinesthetic learner persona" class="persona-avatar">
+                            <h3>Daniel (10)</h3>
+                            <div class="persona-tag">Kinesthetic Learner</div>
+                        </div>
+                        <div class="persona-carpet">
+                            <img src="images/carpet-kinesthetic-learner.svg" alt="Kinesthetic learner carpet" class="persona-carpet-image">
+                        </div>
+                        <div class="persona-description">
+                            <p>Daniel's carpet incorporates interactive elements and motion-based features that respond to his movement and touch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="achievements-showcase">
+            <div class="container">
+                <h2 class="section-title">Every Achievement Makes Your Carpet More Magical</h2>
+                
+                <div class="achievement-progression">
+                    <div class="achievement-stage">
+                        <div class="achievement-icon">
+                            <img src="images/icons/streak-icon.svg" alt="Streak achievement" width="60" height="60">
+                        </div>
+                        <h3>Streak Days</h3>
+                        <p>Each day you practice adds a new golden thread to your carpet's design.</p>
+                        <div class="achievement-visual">
+                            <img src="images/achievements/streak-threads.svg" alt="Golden threads from streak days" class="responsive-image">
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-stage">
+                        <div class="achievement-icon">
+                            <img src="images/icons/gems-icon.svg" alt="Gems achievement" width="60" height="60">
+                        </div>
+                        <h3>Gem Collection</h3>
+                        <p>Gems earned through lessons become sparkling embellishments on your carpet.</p>
+                        <div class="achievement-visual">
+                            <img src="images/achievements/gem-embellishments.svg" alt="Gem embellishments" class="responsive-image">
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-stage">
+                        <div class="achievement-icon">
+                            <img src="images/icons/league-icon.svg" alt="League achievement" width="60" height="60">
+                        </div>
+                        <h3>League Advancement</h3>
+                        <p>As you advance through leagues, your carpet flies higher and travels to more exotic destinations.</p>
+                        <div class="achievement-visual">
+                            <img src="images/achievements/league-heights.svg" alt="League height progression" class="responsive-image">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-container centered">
+                    <a href="trial.html" class="button primary-cta">Start Your Magical Journey</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <!-- SVG logo created inline for demonstration -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 150 40">
+                            <g fill="#58CC02">
+                                <path d="M30,20 A10,10 0 1,1 10,20 A10,10 0 1,1 30,20 Z"/>
+                                <ellipse cx="20" cy="30" rx="15" ry="10"/>
+                            </g>
+                            <g fill="white">
+                                <circle cx="20" cy="17" r="5"/>
+                            </g>
+                            <g fill="#333">
+                                <circle cx="20" cy="17" r="2.5"/>
+                            </g>
+                            <g fill="#FFC65A">
+                                <ellipse cx="20" cy="25" rx="6" ry="4"/>
+                            </g>
+                            <g fill="#333">
+                                <path d="M42,15 H46 Q48,15 49,16 Q50,17 50,19 Q50,21 49,22 Q48,23 46,23 H44 V28 H42 V15 Z M46,21 Q47,21 47.5,20.5 Q48,20 48,19 Q48,18 47.5,17.5 Q47,17 46,17 H44 V21 H46 Z"/>
+                                <path d="M53,15 H61 V17 H55 V20 H60 V22 H55 V26 H61 V28 H53 V15 Z"/>
+                                <path d="M67,15 H71 Q73,15 74,16 Q75,17 75,19 Q75,21 74,22 Q73,23 71,23 H69 V28 H67 V15 Z M71,21 Q72,21 72.5,20.5 Q73,20 73,19 Q73,18 72.5,17.5 Q72,17 71,17 H69 V21 H71 Z"/>
+                                <path d="M78,15 H80 V26 H86 V28 H78 V15 Z"/>
+                                <path d="M89,15 H97 V17 H91 V20 H96 V22 H91 V26 H97 V28 H89 V15 Z"/>
+                                <path d="M103,15 H105 L110,28 H108 L107,25 H101 L100,28 H98 L103,15 Z M106,23 L104,18 L102,23 H106 Z"/>
+                                <path d="M115,15 H117 V22 Q117,23.5 117.5,24.25 Q118,25 119,25 Q120,25 120.5,24.25 Q121,23.5 121,22 V15 H123 V22 Q123,24.5 121.75,26.25 Q120.5,28 119,28 Q117.5,28 116.25,26.25 Q115,24.5 115,22 V15 Z"/>
+                                <path d="M128,15 H130 V28 H128 V15 Z"/>
+                                <path d="M138,15 H140 V28 H138 L133,19 V28 H131 V15 H133 L138,24 V15 Z"/>
+                                <path d="M147,17 H143 V15 H153 V17 H149 V28 H147 V17 Z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="footer-tagline">Learning language through magical journeys</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experience.html">Magic Carpet Experience</a></li>
+                        <li><a href="parents.html">For Parents</a></li>
+                        <li><a href="summer.html">Summer Learning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Duolingo. All rights reserved. This is a student project for Bournemouth University.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><span class="social-icon">Facebook</span></a>
+                    <a href="#" aria-label="Twitter"><span class="social-icon">Twitter</span></a>
+                    <a href="#" aria-label="Instagram"><span class="social-icon">Instagram</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>We Value Your Privacy</h3>
+            <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+            
+            <div class="cookie-buttons">
+                <button id="cookie-accept-all" class="cookie-button accept">Accept All</button>
+                <button id="cookie-customize" class="cookie-button customize">Customize</button>
+                <button id="cookie-reject-all" class="cookie-button reject">Reject Non-Essential</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Feature Overlay (displays when premium features are clicked) -->
+    <div id="premium-overlay" class="premium-overlay">
+        <div class="premium-modal">
+            <button class="close-modal" aria-label="Close">&times;</button>
+            <h3>Unlock Premium Magic</h3>
+            <p>Start your 7-day free trial to access all premium carpet designs, golden threads, and magical effects.</p>
+            <div class="premium-feature-highlight">
+                <img id="premium-feature-image" src="images/premium-feature-default.svg" alt="Premium feature" class="responsive-image">
+                <p id="premium-feature-description">Premium features make your Magic Carpet more visually stunning and responsive to your learning progress.</p>
+            </div>
+            <a href="trial.html" class="button primary-cta">Start 7-Day Free Trial</a>
+            <button class="text-button close-modal-button">Continue with Free Version</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="images.js"></script>
+    <script src="main.js"></script>
+    <script src="carpet-experience.js"></script>
+</body>
+</html>
